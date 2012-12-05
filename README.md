@@ -17,7 +17,7 @@ Upload the package to PyPI.
     
 ### register
 
-Register the package with PyPI
+Register the package with PyPI.
 
 ### bootstrap
 

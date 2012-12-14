@@ -20,6 +20,9 @@ clean:
 	
 bootstrap: _virtualenv README
 	_virtualenv/bin/pip install -e .
+ifneq ($(wildcard test-requirements.txt),) 
+	_virtualenv/bin/pip install -r test-requirements.txt
+endif
 	make clean
 	
 _virtualenv: 

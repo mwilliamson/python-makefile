@@ -10,7 +10,7 @@ upload: setup
 register: setup
 	python setup.py register
 
-README:
+README: README.md
 	pandoc --from=markdown --to=rst README.md > README
 
 clean:

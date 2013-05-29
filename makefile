@@ -29,3 +29,4 @@ setup: README
 
 _virtualenv: 
 	virtualenv _virtualenv
+	_virtualenv/bin/pip install 'distribute>=0.6.45'

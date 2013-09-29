@@ -15,6 +15,11 @@ installs the project and its dependencies in the virtualenv.
 Runs all tests under the directory `tests`. This looks through all Python files,
 but all test functions must use nose's `@istest` decorator. In other words,
 the names of files and functions is irrelevant.
+
+Before running the tests or after updating the list of dependencies,
+you should run `make bootstrap`.
+This is not done as part of `make test` since this can slow down the tests considerably
+in the common case of everything already being up-to-date.
     
 ### upload
 

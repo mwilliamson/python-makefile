@@ -5,6 +5,11 @@ Standard makefile for my Python projects. Assumes:
 
 ## Targets
 
+### bootstrap
+
+Get hacking on the project. Creates a virtualenv under `_virtualenv` and
+installs the project and its dependencies in the virtualenv.
+
 ### test
 
 Runs all tests under the directory `tests`. This looks through all Python files,
@@ -18,8 +23,3 @@ Upload the package to PyPI.
 ### register
 
 Register the package with PyPI.
-
-### bootstrap
-
-Get hacking on the project. Creates a virtualenv under `_virtualenv` and
-installs the project and its dependencies in the virtualenv.

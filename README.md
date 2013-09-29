@@ -1,6 +1,7 @@
 Standard makefile for my Python projects. Assumes:
 
 * tests are run using nose
+* any test dependencies are specified in the requirements file `test-requirements.txt`
 * README.md exists
 
 ## Targets

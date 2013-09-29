@@ -19,7 +19,13 @@ the names of files and functions is irrelevant.
 ### upload
 
 Upload the package to PyPI.
+Requires pandoc to be installed so that `README` is created properly.
     
 ### register
 
 Register the package with PyPI.
+
+### README
+
+Creates `README` by converting `README.md` from Markdown to reStructuredText using pandoc.
+If pandoc is not installed, then it simply copies `README.md` to `README`.

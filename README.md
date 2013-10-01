@@ -13,9 +13,7 @@ installs the project and its dependencies in the virtualenv.
 
 ### test
 
-Runs all tests under the directory `tests`. This looks through all Python files,
-but all test functions must use nose's `@istest` decorator. In other words,
-the names of files and functions is irrelevant.
+Runs all tests under the directory `tests` using the command `nosetests tests`.
 
 Before running the tests or after updating the list of dependencies,
 you should run `make bootstrap`.

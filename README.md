@@ -2,7 +2,6 @@ Standard makefile for my Python projects. Assumes:
 
 * tests are run using nose
 * any test dependencies are specified in the requirements file `test-requirements.txt`
-* README.md exists
 
 ## Targets
 
@@ -23,13 +22,7 @@ in the common case of everything already being up-to-date.
 ### upload
 
 Upload the package to PyPI.
-Requires pandoc to be installed so that `README` is created properly.
     
 ### register
 
 Register the package with PyPI.
-
-### README
-
-Creates `README` by converting `README.md` from Markdown to reStructuredText using pandoc.
-If pandoc is not installed, then it simply copies `README.md` to `README`.

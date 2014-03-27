@@ -23,4 +23,5 @@ endif
 
 _virtualenv: 
 	virtualenv _virtualenv
-	_virtualenv/bin/pip install 'distribute>=0.6.45'
+	_virtualenv/bin/pip install --upgrade pip
+	_virtualenv/bin/pip install --upgrade setuptools

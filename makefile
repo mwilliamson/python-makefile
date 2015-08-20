@@ -6,7 +6,7 @@ test:
 test-all:
 	tox
 
-upload:
+upload: test-all
 	python setup.py sdist upload
 	make clean
 	

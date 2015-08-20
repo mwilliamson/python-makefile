@@ -2,7 +2,10 @@
 
 test:
 	sh -c '. _virtualenv/bin/activate; nosetests tests'
-	
+
+test-all:
+	tox
+
 upload:
 	python setup.py sdist upload
 	make clean

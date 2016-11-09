@@ -15,7 +15,7 @@ register:
 
 clean:
 	rm -f MANIFEST
-	rm -rf dist
+	rm -rf build dist
 	
 bootstrap: _virtualenv
 	_virtualenv/bin/pip install -e .

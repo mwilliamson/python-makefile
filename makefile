@@ -1,7 +1,7 @@
 .PHONY: test upload clean bootstrap
 
 test:
-	sh -c '. _virtualenv/bin/activate; nosetests tests'
+	sh -c '. _virtualenv/bin/activate; py.test tests'
 
 test-all:
 	tox

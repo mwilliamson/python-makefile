@@ -10,9 +10,6 @@ upload: test-all
 	_virtualenv/bin/python setup.py sdist bdist_wheel upload
 	make clean
 
-register:
-	_virtualenv/bin/python setup.py register
-
 clean:
 	rm -f MANIFEST
 	rm -rf build dist

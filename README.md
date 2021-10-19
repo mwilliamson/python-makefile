@@ -23,10 +23,6 @@ in the common case of everything already being up-to-date.
 
 Upload the package to PyPI.
 
-### register
-
-Register the package with PyPI.
-
 ## References
 
 * [Why you shouldn't invoke setup.py directly, Paul Ganssle](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html)

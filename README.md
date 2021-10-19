@@ -1,6 +1,6 @@
 Standard makefile for my Python projects. Assumes:
 
-* tests are run using nose
+* tests are run using pytest
 * any test dependencies are specified in the requirements file `test-requirements.txt`
 
 ## Targets
@@ -12,7 +12,7 @@ installs the project and its dependencies in the virtualenv.
 
 ### test
 
-Runs all tests under the directory `tests` using the command `nosetests tests`.
+Runs all tests under the directory `tests` using the command `py.test tests`.
 
 Before running the tests or after updating the list of dependencies,
 you should run `make bootstrap`.

@@ -1,21 +1,31 @@
-.PHONY: test upload build-dist clean bootstrap
+.PHONY: test
 
 test:
 	sh -c '. _virtualenv/bin/activate; py.test tests'
 
+.PHONY: test-all
+
 test-all:
 	tox
+
+.PHONY: upload
 
 upload: test-all
 	_virtualenv/bin/twine dist/*
 	make clean
 
+.PHONY: build-dist
+
 build-dist: clean
 	_virtualenv/bin/pyproject-build
+
+.PHONY: clean
 
 clean:
 	rm -f MANIFEST
 	rm -rf build dist
+
+.PHONY: bootstrap
 
 bootstrap: _virtualenv
 	_virtualenv/bin/pip install -e .

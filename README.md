@@ -18,11 +18,15 @@ Before running the tests or after updating the list of dependencies,
 you should run `make bootstrap`.
 This is not done as part of `make test` since this can slow down the tests considerably
 in the common case of everything already being up-to-date.
-    
+
 ### upload
 
 Upload the package to PyPI.
-    
+
 ### register
 
 Register the package with PyPI.
+
+## References
+
+* [Why you shouldn't invoke setup.py directly, Paul Ganssle](https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html)

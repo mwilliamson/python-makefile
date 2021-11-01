@@ -11,7 +11,7 @@ test-all:
 .PHONY: upload
 
 upload: test-all build-dist
-	_virtualenv/bin/twine dist/*
+	_virtualenv/bin/twine upload dist/*
 	make clean
 
 .PHONY: build-dist
